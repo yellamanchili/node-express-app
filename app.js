@@ -23,6 +23,12 @@ app.get('/greeting/:id',  (req, res) =>{
 app.get('/yo/:buddy',  (req, res) =>{
   res.send('<h1>Yo, ' + req.params.buddy + '!</h1>')
 })
+app.get('/name/:id',  (req, res) =>{
+  res.send('This is Vamshi Krishna ')
+})
+app.get('/greeting/:id',  (req, res) =>{
+  res.send('I am from Vijayawada')
+})
 
 // handle non-existant routes
 app.use((req, res, next) => {
